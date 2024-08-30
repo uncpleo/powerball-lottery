@@ -24,5 +24,4 @@ describe('TicketService', () => {
     await expect(ticketService.requestTicketPurchase(ticket)).rejects.toThrow("A ticket cannot have more than 5 lines.");
   });
 
-  // Más pruebas para otros escenarios
 });
