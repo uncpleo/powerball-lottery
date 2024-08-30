@@ -24,6 +24,12 @@ jobs:
     - name: List installed dependencies (debugging step)
       run: npm ls --depth=0
 
+    - name: Install Jest globally
+      run: npm install -g jest
+
+    - name: Fix Jest permissions
+      run: chmod +x ./node_modules/.bin/jest
+
     - name: Run tests
       run: npx jest
 
